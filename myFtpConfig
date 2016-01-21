@@ -1,0 +1,21 @@
+listen=YES
+local_enable=NO
+anonymous_enable=YES
+write_enable=NO
+
+#root directory for anonymous connections
+anon_root=/var/ftp
+
+#Limit the rate at which anonymous users can retrieve files.
+anon_max_rate=2048000
+
+#Enable logging information about user logins an file transfers. The log file is located at /var/log/vsftpd.log.
+xferlog_enable=YES
+
+#for passive model
+pasv_address=140.92.53.111
+pasv_enable=YES
+accept_timeout=60
+pasv_min_port=65400
+pasv_max_port=65410
+
